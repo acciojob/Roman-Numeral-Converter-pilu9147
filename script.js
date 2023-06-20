@@ -35,3 +35,4 @@ function convertToRoman(num) {
 
 // Testing the code with input 36
 console.log(convertToRoman(36));
+module.exports = convertToRoman
