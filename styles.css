@@ -1,1 +1,49 @@
 /* Your CSS Code here. */
+/* import java.io.*;
+import java.util.*;
+
+class Main {
+    public static void main(String[] args) throws IOException {
+        BufferedReader br =
+            new BufferedReader(new InputStreamReader(System.in));
+
+        int tc = Integer.parseInt(br.readLine().trim());
+        while (tc-- > 0) {
+            String roman = br.readLine().trim();
+            Solution ob = new Solution();
+            System.out.println(ob.romanNumeralToDecimal(roman));
+        }
+    }
+}
+
+class Solution {
+    public int romanNumeralToDecimal(String str) {
+        // code here
+		 int ans = 0;
+		int prev = 0;
+		for(int i = str.length()-1;i>=0;i--) {
+			int num = solve(str.charAt(i));
+			if(4*num<ans) {
+				ans =ans - num;
+			}
+            else {
+                ans = ans + num;
+            }
+		}
+		return ans;
+    }
+	 public int solve(char s) {
+		int val = 0;
+		switch(s) {
+			case 'I' : val = 1; break;
+			case 'V' : val = 5; break;
+			case 'X' : val = 10; break;
+			case 'L' : val = 50; break;
+			case 'C' : val = 100; break;
+			case 'D' : val = 500; break;
+			case 'M' : val = 1000; break;
+		}
+		return val;
+	}
+}
+ */
